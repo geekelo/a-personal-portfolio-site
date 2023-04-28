@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**A Personal Portfolio Site** is a responsive, functional and very aesthetic website designed and developed to help a talent showcase his / her capabilities to recruiters, managers, work partners and mentees. This website comes with a vibrant and engaing UI. An excellent job was done on the User Experience of this website to make a talent's work very appealing to any recruiter. It contains all the necessary sections recruiters expect to see. The structure is a well organized. The style tone proffesional. Both style and content can be tweaked to suit the talent's preferences.
+**A Personal Portfolio Site** is a responsive, functional and very aesthetic website designed and developed to help a talent showcase his / her capabilities to recruiters, managers, work partners and mentees. This website comes with a vibrant and engaing UI. An excellent job was done on the User Experience of this website to make a talent's work very appealing to any recruiter. It contains all the necessary sections recruiters expect to see. The structure is a well organized. The style tone is professional. Both style and content can be tweaked to suit the talent's preferences.
 
 ## 🛠 Built With <a name="built-with"></a>
 
