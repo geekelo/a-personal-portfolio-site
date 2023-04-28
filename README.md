@@ -100,7 +100,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> View the live demo of this project by clicking the text below.
 
 - [See Live Demo](https://geekelo.github.io/a-personal-portfolio-site/index.html)
 
