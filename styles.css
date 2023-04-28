@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+/* MOBILE ONLY */
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+
+  /* NAV SECTION */
+
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+  }
+
+  .navItems {
+    flex: 50%;
+  }
+
+  #logoContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #logo {
+    width: 76px;
+    height: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+  }
+
+  #menuiconContainer {
+    text-align: right;
+  }
+
+  /* HEADER SECTION */
+
+  #aboutContainer {
+    background-image: url("./media-library/header-shapes mobile.png");
+    background-size: cover;
+    height: 587.15px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 24px;
+  }
+
+  /* ABOUT SECTION */
+
+  #aboutTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    width: 327px;
+    height: 190px;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  #aboutSummary {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    width: 327px;
+    padding: -20px;
+  }
+
+  #socialsContainer {
+    color: #7f8cff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .socialIcons {
+    padding-right: 17px;
+  }
+}
