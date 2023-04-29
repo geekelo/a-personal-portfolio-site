@@ -18,7 +18,7 @@
     gap: 0;
     padding: 10px 24px;
     border-bottom-left-radius: 10%;
-    border: none; 
+    border: none;
   }
 
   /* NAV SECTION */
@@ -69,7 +69,6 @@
     line-height: 42px;
     color: #172b4d;
     width: 327px;
-
     padding-top: 80px;
   }
 
@@ -109,6 +108,7 @@
     padding-top: 250px;
     margin-left: 8%;
   }
+
   .grid-container {
     display: grid;
     grid-template-columns: auto;
@@ -125,22 +125,22 @@
     padding: 16px;
     gap: 0;
     width: 327px;
-    background: #ffffff;
-    border: 2px solid #DFE1E6;
+    background: #fff;
+    border: 2px solid #dfe1e6;
     border-radius: 16px;
   }
 
   .titleSection h2 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 35px;
-    color: #172B4D;
+    color: #172b4d
   }
 
- .titleSection p { 
-    font-family: 'Poppins';
+  .titleSection p { 
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
