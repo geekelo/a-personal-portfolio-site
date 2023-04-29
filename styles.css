@@ -34,6 +34,10 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+  }
+
+  #logo a {
+    text-decoration: none;
     color: #6070ff;
   }
 
@@ -60,7 +64,7 @@
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 52px;
     color: #172b4d;
     width: 327px;
@@ -89,7 +93,13 @@
     line-height: 24px;
   }
 
+  #socialList {
+    padding: 0;
+  }
+
   .socialIcons {
     padding-right: 17px;
+    text-decoration: none;
+    display: inline;
   }
 }
