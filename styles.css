@@ -3,22 +3,31 @@
 /* MOBILE ONLY */
 
 @media only screen and (max-width: 480px) {
+  /* GENERAL STYLES */
+
   body {
     margin: 0;
-    background-color: #e5e5e5;
+  }
+
+  .defaultFontFamily {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
   }
 
   #headerSection {
     background-image: url("./media-library/headerbg.png");
     background-size: cover;
-    height: 700px;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    gap: 0;
-    padding: 10px 24px;
-    border-bottom-left-radius: 10%;
-    border: none;
+    background-color: #e5e5e5;
+    height: 710px;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .links {
+    text-decoration: none;
+    color: #6070ff;
   }
 
   /* NAV SECTION */
@@ -28,7 +37,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 10px 24px;
   }
 
   .navItems {
@@ -43,38 +52,57 @@
   #logo {
     width: 76px;
     height: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #6070ff;
   }
 
   #menuiconContainer {
     text-align: right;
   }
 
-  /* ABOUT SECTION */
+  /* ABOUT & ABOUT SELF SECTION */
+  #aboutContainer {
+    background-size: cover;
+    height: 587.15px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 24px;
+  }
 
-  .aboutTitle {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+  #aboutSelfContainer {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 24px;
+    padding-top: 100px;
+    background-image: url("./media-library/Base.png");
+    height: 1050px;
+    background-size: cover;
+    background-color: #e5e5e5;
+  }
+
+  .aboutTitles {
     font-weight: 700;
     font-size: 35px;
-    line-height: 42px;
+    line-height: 52px;
     color: #172b4d;
     width: 327px;
-    padding-top: 80px;
+    height: 190px;
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  #aboutSelfTitle {
+    font-size: 30px;
+    line-height: 40px;
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 25px;
   }
 
   .summaries {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -83,203 +111,193 @@
     padding: -20px;
   }
 
-  .socialsContainer {
+  .socialsContainers {
     color: #7f8cff;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .listContainers {
-    padding: 0;
-  }
-
-  .lists {
+  .socialIcons {
     padding-right: 17px;
     text-decoration: none;
     display: inline;
   }
 
-  /* WORKS SECTION */
-
-  #workSection {
-    padding-top: 250px;
-    margin-left: 8%;
-  }
-
-  .grid-container {
+  /* WORK SECTION */
+  .workSection {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
-    background: #e5e5e5;
-    grid-gap: 120px 0;
+    grid-row-gap: 88px;
+    padding: 114px 24px;
+    background-color: #e5e5e5;
+    align-content: center;
   }
 
-  .workContainers {
-    box-sizing: border-box;
+  .workSamples {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 0;
+    box-sizing: border-box;
     width: 327px;
-    background: #fff;
-    border: 2px solid #dfe1e6;
-    border-radius: 16px;
+    border: 1px solid #dfe1e6;
   }
 
-  .titleSection h2 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+  .workImages {
+    width: 295px;
+    height: 220px;
+  }
+
+  .workContents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workTitles {
     font-weight: 700;
     font-size: 32px;
     line-height: 35px;
-    color: #172b4d
+    color: #172b4d;
   }
 
-  .titleSection p { 
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #7A869A
- }
-
-  .titleSection p > span {
-    color: #344563;
-
-  }
-
-
-  .titleSection p > img {
-    margin: 0 12px;
-  }
-
-  .workSummaries {
-    padding-left: 24px;
-    margin-top: 0;	
-  }
-
-  .tagContainers {
+  .workMetadatas {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
-    padding-left: 24px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
+    justify-content: space-between;
+    width: 80%;
+    height: 16px;
+    font-weight: 600;
+    font-size: 13px;
     line-height: 16px;
-    letter-spacing: 0.03em;
-    color: #6070FF;
+    color: #344563;
   }
 
-  .tags {
-    padding: 8px 12px 2px 12px;
+  .inactiveCategories {
+    color: #7a869a;
+  }
+
+  .workDescriptions {
+    height: 76px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .workCTAs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    justify-items: center;
+  }
+
+  .workTags li {
+    text-decoration: none;
+    display: inline;
+    padding: 5px 12px;
     height: 24px;
     background: #ebebff;
     border-radius: 8px;
   }
 
-  .projectButtons {
-    font-family: 'Poppins';
-    font-style: normal;
+  a .workTags {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #396df2;
+  }
+
+  .workBtns {
+    padding: 26px;
+    background: #fff;
+    border: 1px solid #396df2;
+    border-radius: 12px;
+    width: 58%;
+    height: 24px;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    border: 1px solid #396df2;
-    border-radius: 13px;
-    padding: 12px 12px;
-    align-items: center;
+    display: flex;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.03em;
-    color: #396DF2;
-    background-color: inherit;
-    margin-top: 10px;
-    margin-left: 24px;
+    color: #396df2;
   }
 
-  /* ABOUT SELF SECTION */
-
-  .aboutSelfContainer {
-    background-image: url("./media-library/Base.png");
-    background-size: cover;
-    padding-left: 8%;
-    height: 1263px;
-    margin-top: 100px;
+  .workBtns:hover {
+    background-color: #6070ff;
+    color: #fff;
   }
 
-  .aboutSelfTitle {
-    font-size: 25px;
-    line-height: 42px;
+  a.workBtns:hover {
+    color: #fff;
   }
 
-  .resumeBtn {
-    margin-left: 0;
+  /* EXPERIENCE SECTION */
+  #experienceSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
 
-  /* TABS */
+  .inactiveExpTabs {
+    border-bottom: 1px solid #dfe1e6;
+  }
 
-  .tabTitle {
-    font-family: 'Poppins';
-    font-style: normal;
+  .experienceTitles {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-  }
-
-  .tabContainer {
-    background-color: #ffffff;
-    padding-top: 50px;
-    grid-template-columns: ;
-    grid-template-rows: 1;
-
-  }
-
-  .langIcons {
     display: flex;
+    align-items: center;
+    color: #000;
+    flex: 70%;
+  }
+
+  .tabHeads {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tabIcons {
+    width: 50%;
+    text-align: right;
+    padding: 30px;
+  }
+
+  .subTabs {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-content: center;
+    text-decoration: none;
+    width: 303px;
     height: 66.72px;
-    background: #F7F7F9;
+    background: #f7f7f9;
     border-radius: 8px;
-    margin-top: 12px;
-    font-family: 'Poppins';
-    font-style: normal;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .subTabsTexts {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    align-items: center;
-    gap: 20px;
-    padding-left: 20px;
-    width: 290px;
-  }
-
-  .openTab {
-    grid-column: 1/4;
-  }
-  .closedTabs {
-    grid-gap: 0;
-    height: 40px;
-    border-bottom: 1px solid #DFE1E6;
-    width: 290px;
-    align-items: center;
-   }
-
-  .frame {
-    grid-column: 5;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-  }
-  .skills {
-    padding-top: 5px;
-    grid-column: 6;
-    padding-bottom: 20px;
-   display: flex;
-	     flex-direction: row;
+    align-items: center;
+    color: #253858;
+    padding-left: 10px;
   }
 }
