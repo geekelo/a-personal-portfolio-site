@@ -15,14 +15,13 @@
   }
 
   #headerSection {
-    background-image: url("./media-library/headerbg.png");
+    background-image: url("./media-library/headerbg1.png");
     background-size: cover;
     background-color: #e5e5e5;
-    min-height: 750px;
+    padding-bottom: 40%;
     display: grid;
-    grid-template-columns: auto;
-    box-sizing: border-box;
-    max-width: 768px;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   ul {
@@ -54,10 +53,9 @@
   }
 
   #logo {
-    width: 76px;
     height: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 20px;
   }
 
@@ -74,6 +72,7 @@
     flex-direction: column;
     gap: 0;
     padding: 10px 24px;
+    justify-content: center;
   }
 
   #aboutSelfContainer {
