@@ -2,7 +2,7 @@
 
 /* MOBILE ONLY */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   /* GENERAL STYLES */
 
   body {
@@ -15,10 +15,13 @@
   }
 
   #headerSection {
-    background-image: url("./media-library/headerbg.png");
+    background-image: url("./media-library/headerbg1.png");
     background-size: cover;
     background-color: #e5e5e5;
-    height: 710px;
+    padding-bottom: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   ul {
@@ -50,10 +53,9 @@
   }
 
   #logo {
-    width: 76px;
     height: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 20px;
   }
 
@@ -70,6 +72,7 @@
     flex-direction: column;
     gap: 0;
     padding: 10px 24px;
+    justify-content: center;
   }
 
   #aboutSelfContainer {
@@ -129,9 +132,10 @@
     display: grid;
     grid-template-columns: auto;
     grid-row-gap: 88px;
-    padding: 114px 24px;
+    padding: 114px 0;
     background-color: #e5e5e5;
     align-content: center;
+    align-items: center;
   }
 
   .workSamples {
@@ -144,6 +148,7 @@
     box-sizing: border-box;
     width: 327px;
     border: 1px solid #dfe1e6;
+    margin: 0 auto;
   }
 
   .workImages {
@@ -236,15 +241,6 @@
     color: #396df2;
   }
 
-  .workBtns:hover {
-    background-color: #6070ff;
-    color: #fff;
-  }
-
-  a.workBtns:hover {
-    color: #fff;
-  }
-
   /* EXPERIENCE SECTION */
   #experienceSection {
     display: flex;
@@ -300,5 +296,83 @@
     align-items: center;
     color: #253858;
     padding-left: 10px;
+  }
+
+  /* CONTACT SECTION */
+  .contactFormSection {
+    background-image: url("./media-library/Contact-me.png");
+    height: 950px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+
+  .formHeadingContainer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 114px;
+    height: 200px;
+  }
+
+  .formHeadingContainer h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+  }
+
+  .formHeadingContainer p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ebebff;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formFields {
+    width: 93%;
+    background-color: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    padding: 15px 16px;
+    color: #b3bac5;
+  }
+
+  input[class~="formFields"] {
+    height: 20px;
+  }
+
+  .formBtn {
+    width: 142px;
+    height: 48px;
+    background: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    border: 1px solid #cfd8dc;
+  }
+
+  /* ALL BUTTONS HOVER STYLES */
+  .workBtns:hover,
+  .formBtn:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  a.workBtns:hover, {
+    color: #fff;
   }
 }
