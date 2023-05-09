@@ -38,15 +38,22 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
+
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
@@ -110,15 +117,11 @@ To get a local copy up and running, follow these steps.
 
 > Clone the repository
 ```
-git clone https://github.com/geekelo/Hello-World.git
+git clone https://github.com/geekelo/a-personal-portfolio-site.git
 ```
 > And you are ready to begin your project
 
-### Prerequisites
-> You should have Node and Git Installed
-> You should have basic knowledge on HTML / CSS
-
-### Available Files
+### Setup <a name="setup"></a>
 This project contains
 An HTML FILE (free to edit) - file that contains html codes to give structure to the main webpage
 A CSS FILE (free to edit) - file that contains css codes to style the webpage
@@ -126,33 +129,40 @@ A GIT IGNORE FILE (free to edit) - to hide personal or private files
 HTML/CSS LINTER FILES (should not edit) - Do not make changes
 AN EMPTY JAVASCRIPT FILE (free to edit)
 
+### Prerequisites <a name="prerequisites"></a>
+> You should have Node and Git Installed
+> You should have basic knowledge on HTML / CSS
+> You should have a code editor
 
-### Usage
+### Install <a name="install"></a>
 
-To install linters, execute the following commands:
+> Download install [VSCODE](https://code.visualstudio.com/) and [Git](https://git-scm.com/)
+> To install linters, execute the following commands:
 ```
 Initialize npm | ``` npminit -y ```
 HTML | ``` npm install --save-dev hint@7.x ```
 CSS | ```npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x  ```
 ```
+### Usage <a name="usage"></a>
 To run the linters, execute the following command and fix linter errors:
 ```
 HTML | ``` npx hint . ```
 CSS | ```npx stylelint "**/*.{css,scss}" ```
 If you get a flood of errors keep in mind that linters guide you in writing a clean code!
 ```
+### Run Tests <a name="run-tests"></a>
+You can run this program on your browser
 
-<!-- ### Deployment
+### Deployment <a name="deployment"></a>
 
-You can deploy this project using:
+You can deploy this project using the following procedure:
 
-
-Example:
-
-```sh
-
-```
- -->
+- Pick the right hosting provider.
+- Choose the tool and method to upload your website.
+- Upload files to your website.
+- Move the website files to the main root folder.
+- Import your database.
+- Check if your website works worldwide.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,7 +178,7 @@ Example:
 - Twitter: [@Geekelo_xyz](https://twitter.com/Geekelo_xyz)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
 
-👤 **Uwimbabazi Dorcas**
+👤 **Uwimbabazi Dorcas (Contributor)**
 
 - GitHub: [@Dorcas126](https://github.com/Dorcas126)
 - Twitter: [Dorcasuwi](https://twitter.com/Dorcasuwi)
@@ -176,8 +186,11 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🤝 Contributing <a name="contributing"></a>
 
-## Future Features
+You can offer Contributions, submit an [issue](../../issues/), and make a feature request.
+
+## Future Features <a name="future-features"></a>
 
 - Add desktop friendly styles.
 - Add the pop up modal
