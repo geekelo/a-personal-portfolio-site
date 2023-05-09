@@ -168,12 +168,18 @@ Example:
 - Twitter: [@Geekelo_xyz](https://twitter.com/Geekelo_xyz)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
 
+👤 **Uwimbabazi Dorcas**
+
+- GitHub: [@Dorcas126](https://github.com/Dorcas126)
+- Twitter: [Dorcasuwi](https://twitter.com/Dorcasuwi)
+- LinkedIn: [uwimbabazi Dorcas](https://www.linkedin.com/in/uwimbabazi-dorcas-956a5a226/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Future Features
 
-- Add the contact section
+- Add desktop friendly styles.
 - Add the pop up modal
 - Add the accessiblity 
 
