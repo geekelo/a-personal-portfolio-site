@@ -223,11 +223,22 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
 I’d love to help with it!</p>
       </div>
-      <form action="https://formspree.io/f/xqkonnqr" method="POST">
-        <input type="text">
-	<input type="email">
-	<textarea></textarea>
+      <form action="https://formspree.io/f/xqkonnqr" method="POST" class="contactForm">
+        <ul>
+	  <li>
+            <label for="name"></label>
+            <input type="text" id="name" name="fullname" placeholder="e.g John Doe" class="formFields defaultFontFamily" maxlength="30" required>
+	  </li>
+	  <li>
+	    <label for="email"></label>
+	    <input type="email" id="email" name="email" placeholder="e.g abc@gmail.com" class="formFields defaultFontFamily" required>
+	  </li>
+	  <li>
+	    <textarea placeholder="Write your message here" class="formFields defaultFontFamily" name="message" cols="170" rows="10" maxlength="500" required></textarea>
+	  </li>
 
+        </ul>
+        <input type="submit" class="formBtn defaultFontFamily" value="Get In Touch">
       </form>
     </section>
 	<script src="index.js"></script>
