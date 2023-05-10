@@ -2,7 +2,6 @@
 
 /* MOBILE ONLY */
 
-@media only screen and (max-width: 768px) {
   /* GENERAL STYLES */
 
   body {
@@ -235,10 +234,12 @@
     font-size: 17px;
     line-height: 24px;
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     letter-spacing: 0.03em;
     color: #396df2;
+    justify-content: center;
   }
 
   /* EXPERIENCE SECTION */
@@ -374,5 +375,101 @@
 
   a.workBtns:hover, {
     color: #fff;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  
+  #headerSection {
+    background-image: url("./media-library/desktopheaderbg.png");
+    background-size: cover;
+    background-color: #e5e5e5;
+    padding-bottom: 10%;
+    width: 100%;
+
+  }
+  /* ABOUT & ABOUT SELF SECTION*/
+  #aboutContainer {
+    background-image: url("./media-library/header-bg-desktop.png");
+    height: 700.15px;
+    padding-left: 17%;
+    width: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+  .aboutTitles {
+    width: 100% ;
+    height: 190px;
+  }
+
+
+  #aboutSummary {
+    width: 70%;
+  }
+
+  /* WORK SECTION */
+  .workSection  {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 88px;
+    padding: 114px 0;
+    background-color: #e5e5e5;
+    align-content: center;
+    align-items: center;
+  }
+  .workSamples {
+    flex-direction: row;
+    width: 60%;
+    padding: 0 16px;
+  }
+
+  .workContents {
+    padding: 2% 5%;
+    justify-content: start;
+
+  }
+
+  .workTitles {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 5px;
+  }
+
+  .workMetadatas {
+    width: 80%;
+    height: 10px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .workDescriptions {
+    height: auto;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .workCTAs {
+    padding: 0;
+  }
+  
+  .workTags {
+    font-size: 10px;
+  }
+
+  .workTags li {
+    margin-right: 3%;
+  }
+
+  .workMetadatas {
+    width: 55%;
+  }
+
+  .workBtns {
+    padding: 15px 10px;
+    width: 27%;
+    font-size: 11px;
   }
 }
