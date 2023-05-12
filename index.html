@@ -29,7 +29,7 @@
     <!-- about area (subsection) -->
     <section id="aboutContainer">
       <div id="aboutTitle" class="aboutTitles defaultFontFamily">
-        <h1>I’m Alexandra. Glad to see you!</h1> 
+        <h1>I’m Alexandra. <br> Glad to see you!</h1> 
       </div>
 
       <div id="aboutSummary" class="summaries defaultFontFamily">
@@ -53,6 +53,8 @@
     <!-- WORK SECTION -->
     <section class="workSection">
 
+    <!-- Wrap1 -->
+    <main class="workSectionWraps">
       <!-- first sample -->
       <div class="workSamples">
         <p class="workImages"><img src="./media-library/Snapshoot-Portfolio.png" alt="work image" width="" height=""></p>
@@ -60,7 +62,8 @@
           <div class="workHeading">
             <h3 class="workTitles defaultFontFamily">Tonic</h3>
 	    <div class="workMetadatas defaultFontFamily">
-	      <p class="metaCategories">CANOPY</p>
+	      <p class="metaCategories ">CANOPY</p>
+              <p class="metaCategories">FACEBOOK</p>
 	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
 	      <p class="metaCategories inactiveCategories">Back End Dev</p>
 	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
@@ -72,16 +75,17 @@
 	  <div class="workCTAs">
             <ul class="workTags defaultFontFamily">
 	      <li><a href="#">HTML</a></li>
+             <li class="hideLists" ><a href="#">Ruby on rails</a></li>
               <li><a href="#">CSS</a></li>
 	      <li><a href="#">JavaScript</a></li>
 	    </ul>
-            <a href="#"><button class="workBtns">See Projects</button></a>
+            <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
 	  </div>
 	</div>
       </div>
 
       <!-- second sample -->
-      <div class="workSamples">
+      <div class="workSamples reverseSamples">
         <p class="workImages"><img src="./media-library/Snapshoot-Portfolio1.png" alt="work image" width="" height=""></p>
         <div class="workContents">
 
@@ -100,6 +104,7 @@
 	  <div class="workCTAs">
             <ul class="workTags defaultFontFamily">
 	      <li><a href="#">HTML</a></li>
+             <li class="hideLists" ><a href="#">Ruby on rails</a></li>
               <li><a href="#">CSS</a></li>
 	      <li><a href="#">JavaScript</a></li>
 	    </ul>
@@ -107,15 +112,18 @@
 	  </div>
 	</div>
       </div>
+      </main>
 
-      <!-- Third Sample -->
-      <div class="workSamples">
+      <!-- Wrap 2 -->
+      <main class="workSectionWraps">
+      <!-- Third Sample A -->
+      <div class="workSamples mobileOnlySamples">
         <p class="workImages"><img src="./media-library/Snapshoot-Portfolio2.png" alt="work image" width="" height=""></p>
         <div class="workContents">
 
           <div class="workHeading">
             <h3 class="workTitles defaultFontFamily">Tonic</h3>
-	    <div class="workMetadatas">
+	    <div class="workMetadatas defaultFontFamily">
 	      <p class="metaCategories">CANOPY</p>
 	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
 	      <p class="metaCategories inactiveCategories">Back End Dev</p>
@@ -128,17 +136,48 @@
 	  <div class="workCTAs">
             <ul class="workTags defaultFontFamily">
 	      <li><a href="#">HTML</a></li>
+              <li class="hideLists" ><a href="#">Ruby on rails</a></li>
               <li><a href="#">CSS</a></li>
 	      <li><a href="#">JavaScript</a></li>
 	    </ul>
-              <a href="#"><button class="workBtns">See Projects</button></a>
+              <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
 	  </div>
 	</div>
       </div>
 
+      <!-- Third Sample B -->
+      <div class="workSamples desktopOnlySamples">
+        <p class="workImages"><img src="./media-library/Snapshoot-Portfolio4.png" alt="work image" width="" height=""></p>
+        <div class="workContents">
+
+          <div class="workHeading">
+            <h3 class="workTitles defaultFontFamily">Tonic</h3>
+	    <div class="workMetadatas defaultFontFamily">
+	      <p class="metaCategories">CANOPY</p>
+	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
+	      <p class="metaCategories inactiveCategories">Back End Dev</p>
+	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
+	      <p class="metaCategories inactiveCategories">2015</p>
+	    </div>
+	  </div>
+
+	  <p class="workDescriptions defaultFontFamily">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+	  <div class="workCTAs">
+            <ul class="workTags defaultFontFamily">
+	      <li><a href="#">HTML</a></li>
+               <li><a href="#">CSS</a></li>
+	      <li><a href="#">JavaScript</a></li>
+	    </ul>
+              <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+	  </div>
+	</div>
+      </div>
+
+
+
       <!-- fourth sample -->
-      <div class="workSamples">
-        <div class="workImages"><img src="./media-library/Snapshoot-Portfolio3.png" alt="work image" width="" height=""></div>
+      <div class="workSamples reverseSamples">
+        <p class="workImages"><img src="./media-library/Snapshoot-Portfolio3.png" alt="work image" width="" height=""></p>
         <div class="workContents">
 
           <div class="workHeading">
@@ -156,13 +195,15 @@
 	  <div class="workCTAs">
             <ul class="workTags defaultFontFamily">
 	      <li><a href="#">HTML</a></li>
+              <li class="hideLists" ><a href="#">Ruby on rails</a></li>
               <li><a href="#">CSS</a></li>
 	      <li><a href="#">JavaScript</a></li>
 	    </ul>
               <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
 	  </div>
 	</div>
-      </div> 
+      </div>
+      </main>
     </section>
 
     <!-- ABOUT SELF -->
@@ -183,7 +224,7 @@
             <li class="socialIcons"><a href="#"><img src="./media-library/Vector-1.png" alt="medium" width="" height=""></a></li>
             <li class="socialIcons"><a href="#"><img src="./media-library/Vector.png" alt="socialicon" width="" height=""></a></li>
           </ul>
-          <a href="#"><button class="workBtns">Get my resume</button></a>
+          <a href="#"><button id="resumeBtn" class="workBtns">Get my resume</button></a>
         </div>
       </div>
 
@@ -217,7 +258,7 @@
     </section>
 
     <!-- CONTACT FORM -->
-    <section class="contactFormSection">
+    <section class="contactFormSection"><div class="cfInnerSection">
       <div class="formHeadingContainer defaultFontFamily">
       <h3>Contact me</h3>
       <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
@@ -229,7 +270,7 @@ I’d love to help with it!</p>
         <textarea placeholder="Write your message here" class="formFields defaultFontFamily" name="message" cols="170" rows="10" maxlength="500" required></textarea>
 	<input type="submit" class="formBtn defaultFontFamily" value="Get In Touch">
       </form>
-    </section>
+    </div></section>
 	<script src="index.js"></script>
   </body>
 </html>

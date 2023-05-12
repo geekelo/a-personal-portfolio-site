@@ -94,6 +94,7 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 - **Mobile Friendly** : this website performs well on a mobile device like a phone or tablet.
+- **Desktop Friendly**: this website is responsive to desktop screen sizes.
 - **Simple and Attractive Design** : the UI / UX is engaging and appealing.
 - **Functional** : this website is accessible, easy to navigate, and helpful for users.
 
@@ -192,7 +193,6 @@ You can offer Contributions, submit an [issue](../../issues/), and make a featur
 
 ## Future Features <a name="future-features"></a>
 
-- Add desktop friendly styles.
 - Add the pop up modal
 - Add the accessiblity 
 
