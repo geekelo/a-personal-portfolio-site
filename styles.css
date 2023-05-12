@@ -107,7 +107,6 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  width: 327px;
   padding: -20px;
 }
 
@@ -135,6 +134,12 @@ ul {
   align-items: center;
 }
 
+.workSectionWraps {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+
 .workSamples {
   background-color: #fff;
   border-radius: 16px;
@@ -143,14 +148,12 @@ ul {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 327px;
   border: 1px solid #dfe1e6;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 
-.workImages {
-  width: 295px;
-  height: 220px;
+.workImages img {
+  width: 100%;
 }
 
 .workContents {
@@ -183,7 +186,6 @@ ul {
 }
 
 .workDescriptions {
-  height: 76px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -279,7 +281,6 @@ a {
   text-align: left;
   align-content: center;
   text-decoration: none;
-  width: 303px;
   height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
@@ -377,6 +378,23 @@ a.workBtns:hover {
   color: #fff;
 }
 
+/* DESKTOP & MOBILE DISPLAY OR HIDE STYLES */
+.desktopOnlySamples {
+  display: none;
+}
+
+.desktopWorkTags {
+  display: none;
+}
+
+.mobileOnlySamples {
+  display: flex;
+}
+
+.workTags .hideLists {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   #headerSection {
     background-image: url("./media-library/desktopheaderbg.png");
@@ -431,8 +449,8 @@ a.workBtns:hover {
 
   /* WORK SECTION */
   .workSection {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column-reverse;
     grid-row-gap: 88px;
     padding: 154px 0;
     background-color: #e5e5e5;
@@ -446,6 +464,18 @@ a.workBtns:hover {
     padding: 0 16px;
   }
 
+  .reverseSamples {
+    flex-direction: row-reverse;
+  }
+
+  .desktopOnlySamples {
+    display: flex;
+  }
+
+  .mobileOnlySamples {
+    display: none;
+  }
+
   .workContents {
     padding: 2% 5%;
     justify-content: start;
@@ -453,8 +483,8 @@ a.workBtns:hover {
 
   .workTitles {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 5px;
+    font-size: 30px;
+    line-height: 8px;
   }
 
   .workMetadatas {
@@ -480,6 +510,10 @@ a.workBtns:hover {
 
   .workTags li {
     margin-right: 3%;
+  }
+
+  .workTags .hideLists {
+    display: inline;
   }
 
   .workBtns {
