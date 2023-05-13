@@ -58,6 +58,8 @@ ul {
 
 #menuiconContainer {
   text-align: right;
+  display: flex;
+	   flex-direction: row;
 }
 
 /* ABOUT & ABOUT SELF SECTION */
@@ -376,6 +378,41 @@ input[class~="formFields"] {
 
 a.workBtns:hover {
   color: #fff;
+}
+
+/* ANIMATIONS AND TRANSITIONS */
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.formFields::placeholder {
+  transition: transform 0.3s
+}
+
+.formFields:hover::placeholder {
+  transform: translate(2px);
+}
+
+#logo {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+
 }
 
 /* DESKTOP & MOBILE DISPLAY OR HIDE STYLES */
