@@ -97,6 +97,7 @@ After you're finished please remove all the comments and instructions!
 - **Desktop Friendly**: this website is responsive to desktop screen sizes.
 - **Simple and Attractive Design** : the UI / UX is engaging and appealing.
 - **Functional** : this website is accessible, easy to navigate, and helpful for users.
+- **Animations and transitions : This website has engaging transitions and animations that makes it easier to use, smoother and more natural.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,6 +196,7 @@ You can offer Contributions, submit an [issue](../../issues/), and make a featur
 
 - Add the pop up modal
 - Add the accessiblity 
+- Add functionality using Javascript and Bootstrap.
 
 ## ⭐️ Show your support <a name="support"></a>
 

@@ -40,11 +40,9 @@ ul {
   padding: 10px 24px;
 }
 
-.navItems {
-  flex: 50%;
-}
-
 #logoContainer {
+  display: flex;
+  flex: 30%;
   flex-direction: row;
   align-items: center;
 }
@@ -58,6 +56,20 @@ ul {
 
 #menuiconContainer {
   text-align: right;
+  flex: 50%;
+  padding-left: 45%;
+}
+
+#menuiconContainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menuText {
+  padding-right: 10%;
+  text-decoration: none;
 }
 
 /* ABOUT & ABOUT SELF SECTION */
@@ -152,7 +164,7 @@ ul {
   margin: 0 5%;
 }
 
-.workImages img {
+.workImages {
   width: 100%;
 }
 
@@ -367,7 +379,14 @@ input[class~="formFields"] {
   border: 1px solid #cfd8dc;
 }
 
-/* ALL BUTTONS HOVER STYLES */
+/* ALL BUTTONS HOVER STYLES AND TRANSITIONS */
+.workBtns,
+.formBtn {
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+  transition-delay: 0.1s, 0.2s;
+}
+
 .workBtns:hover,
 .formBtn:hover {
   background-color: #6070ff;
@@ -376,6 +395,40 @@ input[class~="formFields"] {
 
 a.workBtns:hover {
   color: #fff;
+}
+
+/* ANIMATIONS AND TRANSITIONS */
+img {
+  transition: transform 5s;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+.formFields::placeholder {
+  transition: transform 0.3s;
+}
+
+.formFields:hover::placeholder {
+  transform: translate(2px);
+}
+
+.logoRotate {
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 /* DESKTOP & MOBILE DISPLAY OR HIDE STYLES */
