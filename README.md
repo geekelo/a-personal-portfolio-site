@@ -196,6 +196,7 @@ You can offer Contributions, submit an [issue](../../issues/), and make a featur
 
 - Add the pop up modal
 - Add the accessiblity 
+- Add functionality using Javascript and Bootstrap.
 
 ## ⭐️ Show your support <a name="support"></a>
 
