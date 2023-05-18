@@ -108,6 +108,7 @@ After you're finished please remove all the comments and instructions.
 > View the live demo of this project by clicking the text below.
 
 - [See Live Demo](https://geekelo.github.io/a-personal-portfolio-site/index.html)
+- [First Presenation Video](https://www.loom.com/share/719c333faa524c5db6930878f33b809b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
