@@ -42,7 +42,7 @@ ul {
 
 #logoContainer {
   display: flex;
-  flex: 30%;
+  flex: 60%;
   flex-direction: row;
   align-items: center;
 }
@@ -50,14 +50,18 @@ ul {
 #logo {
   height: 20px;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 20px;
 }
 
 #menuiconContainer {
   text-align: right;
-  flex: 50%;
+  flex: 40%;
   padding-left: 45%;
+}
+
+.menuicon {
+  padding-left: 50%;
 }
 
 #menuiconContainer ul {
