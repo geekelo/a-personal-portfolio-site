@@ -187,6 +187,10 @@ You can deploy this project using the following procedure:
 - Twitter: [Dorcasuwi](https://twitter.com/Dorcasuwi)
 - LinkedIn: [uwimbabazi Dorcas](https://www.linkedin.com/in/uwimbabazi-dorcas-956a5a226/)
 
+👤 **Melkamu Alemawu (Contributor)**
+- GitHub: [@melkamu12](https://github.com/melkamu12)
+- LinkedIn: [melkamu-almawu](https://www.linkedin.com/in/melkamu-almawu/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
