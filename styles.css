@@ -64,16 +64,19 @@ ul {
   padding-left: 50%;
 }
 
-#menuiconContainer ul {
-  list-style: none;
+.open .menuMobile {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.menuText {
-  padding-right: 10%;
-  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  height: calc(100vh);
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  bottom: 0px;
+  background: #6070FF;
+  mix-blend-mode: multiply;
 }
 
 /* ABOUT & ABOUT SELF SECTION */
@@ -459,6 +462,19 @@ img:hover {
     background-color: #e5e5e5;
     padding-bottom: 10%;
     width: 100%;
+  }
+
+  /* NAV SECTION */
+  .menuList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  .menuText {
+  padding-right: 10%;
+  text-decoration: none;
   }
 
   /* ABOUT & ABOUT SELF SECTION */
