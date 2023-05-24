@@ -511,19 +511,19 @@ img:hover {
     width: 100%;
   }
 
-/* NAV SECTION */
+  /* NAV SECTION */
   #menuiconContainer ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  
+ 
   .menuText {
     padding-right: 10%;
     text-decoration: none;
   }
-  
+ 
   /* ABOUT & ABOUT SELF SECTION */
   #aboutContainer {
     height: 700.15px;
