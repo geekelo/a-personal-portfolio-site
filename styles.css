@@ -68,64 +68,6 @@ ul {
   z-index: 3;
 }
 
-/* mobile dropdown menu styles */
-.desktopOnlySamples {
-  display: none;
-}
-
-.menudropdown .menuicon {
-  visibility: hidden;
-}
-
-.menudropdown ul {
-  display: flex;
-  flex: 100%;
-  color: #fff;
-  list-style: none;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 175vh;
-  background: #6070ff;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(5px);
-  text-decoration: none;
-  z-index: 2;
-  justify-content: start;
-  padding-top: 5%;
-  margin: 0;
-}
-
-.menuCloseIcon {
-  display: none;
-}
-
-.menudropdown .menuCloseIcon {
-  display: flex;
-  flex-direction: row;
-  padding-left: 80%;
-}
-
-.menudropdown .menuCloseIcon > .closeiconimg {
-  width: 20px;
-}
-
-.menudropdown .desktopOnlySamples {
-  display: flex;
-}
-
-.menudropdown .desktopOnlySamples > .summaries {
-  color: #fff;
-  font-size: 32px;
-  padding-bottom: 10%;
-  padding-left: 5%;
-  position: relative;
-  z-index: 3;
-}
-
 /* ABOUT & ABOUT SELF SECTION */
 #aboutContainer {
   background-size: cover;
@@ -506,6 +448,60 @@ img:hover {
   display: none;
 }
 
+/* MOBILE DROPDOWN MENU STYLES */
+.menudropdown .menuicon {
+  visibility: hidden;
+}
+
+.menudropdown ul {
+  display: flex;
+  flex: 100%;
+  color: #fff;
+  list-style: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 175vh;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  z-index: 2;
+  justify-content: start;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.menuCloseIcon {
+  display: none;
+}
+
+.menudropdown .menuCloseIcon {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80%;
+}
+
+.menudropdown .menuCloseIcon > .closeiconimg {
+  width: 20px;
+}
+
+.menudropdown .desktopOnlySamples {
+  display: flex;
+}
+
+.menudropdown .desktopOnlySamples > .menuLinks {
+  color: #fff;
+  font-size: 32px;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  position: relative;
+  z-index: 3;
+}
+
 @media only screen and (min-width: 768px) {
   #headerSection {
     background-image: url("./media-library/desktopheaderbg.png");
@@ -522,12 +518,12 @@ img:hover {
     flex-direction: row;
     justify-content: center;
   }
- 
+
   .menuText {
     padding-right: 10%;
     text-decoration: none;
   }
- 
+
   /* ABOUT & ABOUT SELF SECTION */
   #aboutContainer {
     height: 700.15px;
