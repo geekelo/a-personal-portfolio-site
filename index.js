@@ -1,3 +1,4 @@
-function toggleMobileMenu(menu){
-    menu.classList.toggle('open');
+function toggleMobileMenu() {
+  const menuBg = document.querySelector('#menuiconContainer');
+  menuBg.classList.toggle('menudropdown');
 }

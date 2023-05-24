@@ -38,6 +38,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 10px 24px;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
 }
 
 #logoContainer {
@@ -57,26 +60,12 @@ ul {
 #menuiconContainer {
   text-align: right;
   flex: 40%;
-  padding-left: 45%;
 }
 
 .menuicon {
   padding-left: 50%;
-}
-
-.open .menuMobile {
-  display: flex;
-  list-style: none;
-  position: absolute;
-  left: 0;
-  height: calc(100vh);
-  width: 100%;
-  position: absolute;
-  right: 0px;
-  top: 50px;
-  bottom: 0px;
-  background: #6070FF;
-  mix-blend-mode: multiply;
+  position: relative;
+  z-index: 3;
 }
 
 /* ABOUT & ABOUT SELF SECTION */
@@ -438,6 +427,10 @@ img:hover {
   }
 }
 
+.menuText {
+  padding-right: 10%;
+}
+
 /* DESKTOP & MOBILE DISPLAY OR HIDE STYLES */
 .desktopOnlySamples {
   display: none;
@@ -455,6 +448,60 @@ img:hover {
   display: none;
 }
 
+/* MOBILE DROPDOWN MENU STYLES */
+.menudropdown .menuicon {
+  visibility: hidden;
+}
+
+.menudropdown ul {
+  display: flex;
+  flex: 100%;
+  color: #fff;
+  list-style: none;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 175vh;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  z-index: 2;
+  justify-content: start;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.menuCloseIcon {
+  display: none;
+}
+
+.menudropdown .menuCloseIcon {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80%;
+}
+
+.menudropdown .menuCloseIcon > .closeiconimg {
+  width: 20px;
+}
+
+.menudropdown .desktopOnlySamples {
+  display: flex;
+}
+
+.menudropdown .desktopOnlySamples > .menuLinks {
+  color: #fff;
+  font-size: 32px;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  position: relative;
+  z-index: 3;
+}
+
 @media only screen and (min-width: 768px) {
   #headerSection {
     background-image: url("./media-library/desktopheaderbg.png");
@@ -465,16 +512,16 @@ img:hover {
   }
 
   /* NAV SECTION */
-  .menuList {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  #menuiconContainer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .menuText {
-  padding-right: 10%;
-  text-decoration: none;
+    padding-right: 10%;
+    text-decoration: none;
   }
 
   /* ABOUT & ABOUT SELF SECTION */
