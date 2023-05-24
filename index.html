@@ -21,11 +21,12 @@
       </div>
 
       <nav id="menuiconContainer" class="navItems"> 
-        <p class="menuicon"><img class="mobileOnlySamples" src="./media-library/Union.png" alt="menu" width="" height=""></p>
-        <ul class="defaultFontFamily desktopOnlySamples">
-          <li class="menuText desktopOnlySamples"><a class="summaries" href="#">Portfolio</a></li>
-          <li class="menuText desktopOnlySamples"><a class="summaries" href="#">About</a></li>
-          <li class="menuText desktopOnlySamples"><a class="summaries" href="#">Contact</a></li>
+        <p class="menuicon" onclick="toggleMobileMenu()"><img class="mobileOnlySamples" src="./media-library/Union.png" alt="menu" width="" height=""></p>
+        <ul class="menu defaultFontFamily desktopOnlySamples" onclick="toggleMobileMenu()">
+          <p class="menuCloseIcon"><img src="./media-library/menucloseicon.png"></p>
+          <li class="menuText desktopOnlySamples"><a class="summaries" href="#portfolio">Portfolio</a></li>
+          <li class="menuText desktopOnlySamples"><a class="summaries" href="#about">About</a></li>
+          <li class="menuText desktopOnlySamples"><a class="summaries" href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -56,8 +57,9 @@
     </section>
 
     <!-- WORK SECTION -->
+    
     <section class="workSection">
-
+      <a name="portfolio"></a>
     <!-- Wrap1 -->
     <main class="workSectionWraps">
       <!-- first sample -->
@@ -212,6 +214,7 @@
     </section>
 
     <!-- ABOUT SELF -->
+    <a name="about"></a>
     <section id="aboutSelfContainer">
 
       <!-- about self section -->
@@ -263,6 +266,7 @@
     </section>
 
     <!-- CONTACT FORM -->
+    <a name="contact"></a>
     <section class="contactFormSection"><div class="cfInnerSection">
       <div class="formHeadingContainer defaultFontFamily">
       <h3>Contact me</h3>
