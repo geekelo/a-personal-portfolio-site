@@ -181,7 +181,7 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 60%;
   height: 16px;
   font-weight: 600;
   font-size: 13px;
@@ -208,13 +208,24 @@ ul {
   justify-items: center;
 }
 
+.workTags {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
 .workTags li {
   text-decoration: none;
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px 12px;
   height: 24px;
   background: #ebebff;
   border-radius: 8px;
+  margin-bottom: 3%;
 }
 
 a .workTags {
@@ -375,19 +386,28 @@ input[class~="formFields"] {
   border: 1px solid #cfd8dc;
 }
 
-/* MODAL STYLES */
+/* MODAL WINDOW STYLES */
 .modalbackdrop {
-  position: absolute;
+  display: none;
+}
+
+.modalActivated .modalbackdrop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
   left: 0px;
   right: 0px;
   top: 0px;
   bottom: -260px;
   background: #c1c7d0;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(9px);
+  padding: 5% 0;
+  padding-bottom: 60%;
+  overflow: scroll;
 }
 
-.modalcards {
+.modalActivated .modalcards {
   display: flex;
   flex-direction: column;
   padding: 5%;
@@ -395,6 +415,34 @@ input[class~="formFields"] {
   border: 1px solid #ebecf0;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
+  width: 80%;
+}
+
+.modalActivated .modalHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modalMetadatas {
+  gap: 10px;
+  width: 50%;
+}
+
+.modalActivated .modalBtnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 100%;
+}
+
+.modalActivated .modalBtns {
+  font-weight: 500;
+  font-size: 80%;
+  width: 100%;
+  padding: 26px;
+  flex-direction: row;
+  gap: 5px;
 }
 
 /* ALL BUTTONS HOVER STYLES AND TRANSITIONS */
@@ -626,7 +674,7 @@ img:hover {
   .workTitles {
     font-weight: 700;
     font-size: 30px;
-    line-height: 8px;
+    line-height: 1.6rem;
   }
 
   .workMetadatas {
@@ -634,6 +682,7 @@ img:hover {
     height: 10px;
     font-size: 8px;
     line-height: 10px;
+    margin-top: -1rem;
   }
 
   .workDescriptions {
@@ -655,7 +704,7 @@ img:hover {
   }
 
   .workTags .hideLists {
-    display: inline;
+    display: flex;
   }
 
   .workBtns {
@@ -744,5 +793,40 @@ img:hover {
 
   .formBtn {
     margin: auto;
+  }
+
+  /* MODAL POPUP STYLES */
+  .modalbackdrop {
+    display: none;
+  }
+
+  .modalActivated .modalbackdrop {
+    padding-bottom: 25%;
+    display: flex;
+  }
+  .modalMetadatas {
+    margin-bottom: 2rem;
+    font-size: 80%;
+    width: 100%;
+  }
+
+  .modalContents {
+    flex-direction: row;
+    gap: 5%;
+    padding: 0;
+  }
+  
+  .modalDescription {
+    flex: 85%;
+  }
+
+  .modalCTAs {
+    width: 50%;
+  }
+
+  .modalBtns {
+    padding: 1.8rem 0.3rem;
+    width: 400px;
+    font-size: 1px;
   }
 }

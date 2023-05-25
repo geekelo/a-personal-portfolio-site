@@ -71,7 +71,7 @@
             <h3 class="workTitles defaultFontFamily"></h3>
 	    <div class="workMetadatas defaultFontFamily">
 	      <p class="metaCategories mobileOnlySamples"></p>
-        <p class="metaCategories "></p>
+        <p class="metaCategories desktopOnlySamples"></p>
 	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
 	      <p class="metaCategories inactiveCategories"></p>
 	      <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
@@ -87,7 +87,7 @@
               <li><a href="#"></a></li>
 	      <li><a href="#"></a></li>
 	    </ul>
-            <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+            <a href="#"><button class="workBtns defaultFontFamily" onclick="activateModalPopup(event)">See Projects</button></a>
 	  </div>
 	</div>
       </div>
@@ -116,7 +116,7 @@
               <li><a href="#"></a></li>
 	      <li><a href="#"></a></li>
 	    </ul>
-            <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+            <a href="#"><button class="workBtns defaultFontFamily" onclick="activateModalPopup(event)">See Projects</button></a>
 	  </div>
 	</div>
       </div>
@@ -148,7 +148,7 @@
               <li><a href="#"></a></li>
 	      <li><a href="#"></a></li>
 	    </ul>
-              <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+              <a href="#"><button class="workBtns defaultFontFamily" onclick="activateModalPopup(event)">See Projects</button></a>
 	  </div>
 	</div>
       </div>
@@ -176,7 +176,7 @@
                <li><a href="#"></a></li>
 	      <li><a href="#"></a></li>
 	    </ul>
-              <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+              <a href="#"><button class="workBtns defaultFontFamily" onclick="activateModalPopup(event)">See Projects</button></a>
 	  </div>
 	</div>
       </div>
@@ -207,7 +207,7 @@
               <li><a href="#"></a></li>
 	      <li><a href="#"></a></li>
 	    </ul>
-              <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+              <a href="#"><button class="workBtns defaultFontFamily" onclick="activateModalPopup(event)">See Projects</button></a>
 	  </div>
 	</div>
       </div>
@@ -280,40 +280,50 @@ I’d love to help with it!</p>
         <textarea placeholder="Write your message here" class="formFields defaultFontFamily" name="message" cols="170" rows="10" maxlength="500" required></textarea>
 	<input type="submit" class="formBtn defaultFontFamily" value="Get In Touch">
       </form>
-    </div></section>
+    </div>
+  </section>
 
     <!-- MODAL WINDOW -->
-    <section class="modalbackdrop">
+    <section class="modalSection">
+    <div class="modalbackdrop">
         <div class="modalcards">
-          <div>
-            <div class="workHeading">
-              <h3 class="workTitles defaultFontFamily"></h3>
-        <div class="workMetadatas defaultFontFamily">
-          <p class="metaCategories"></p>
-          <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
-          <p class="metaCategories inactiveCategories"></p>
-          <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
-          <p class="metaCategories inactiveCategories"></p>
-        </div>
+       
+            <div class="modalHeading">
+              <div>
+                <h3 class="workTitles defaultFontFamily">Tonic</h3>
+                <div class="workMetadatas modalMetadatas defaultFontFamily">
+                  <p class="metaCategories">CANOPY</p>
+                  <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
+                  <p class="metaCategories inactiveCategories">bla</p>
+                  <p class="metaSeparators"><img src="./media-library/Counter.png" alt="seperator" width="" height=""></p>
+                  <p class="metaCategories inactiveCategories">bla</p>
+                </div>
+              </div>
+              <p onclick="deactivateModalPopup()"><img src="./media-library/modalcloseicon.png" class="modalcloseicon" alt="modalcloseicon" width="" height=""></p>
+            </div>
+       
+
+            <p><img class="workImages" src="./media-library/Snapshoot-Portfolio.png" alt="work image" width="" height=""></p>
+            <div class="modalContents workContents">
+              <p class="modalDescription workDescriptions defaultFontFamily">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+              <div class="modalCTAs workCTAs">
+                <ul class="workTags defaultFontFamily">
+                  <li class=""><a href="#"></a></li>
+                  <li class="hideLists" ><a href="#"></a></li>
+                  <li class=""><a href="#"></a></li>
+                  <li class=""><a href="#"></a></li>
+                  <li class="hideLists" ><a href="#"></a></li>
+                </ul>
+            <p class="modalBtnContainer">
+            <a href="#"><button class="modalBtns workBtns defaultFontFamily">See live <img src="./media-library/seeliveicon.png" alt="work image" width="" height=""></button></a>
+            <a href="#"><button class="modalBtns workBtns defaultFontFamily">See source <img src="./media-library/seesourceicon.png" alt="work image" width="" height=""></button></a>
+            </p>
           </div>
-          <p><img class="workImages" src="" alt="work image" width="" height=""></p>
-          <div class="workContents">
-  
-            
-      </div>
-  
-      <p class="workDescriptions defaultFontFamily"></p>
-      <div class="workCTAs">
-              <ul class="workTags defaultFontFamily">
-          <li><a href="#"></a></li>
-                <li class="hideLists" ><a href="#"></a></li>
-                <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-                <a href="#"><button class="workBtns defaultFontFamily">See Projects</button></a>
+          </div>
       </div>
     </div>
     </section>
+    </body>
 	<script src="index.js"></script>
   </body>
 </html>

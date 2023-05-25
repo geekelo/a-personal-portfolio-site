@@ -4,7 +4,7 @@ let projects = [
     "title": "Tonic",
     "categories": ["CANOPY", "FACEBOOK", "Back End Dev", "2015"],
     "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript", "Bootstrap"],
     "live link": "#",
     "source link": "#"
 },
@@ -14,7 +14,7 @@ let projects = [
     "title": "Multi-Purpose Posts",
     "categories": ["CANOPY", "Back End Dev", "2015"],
     "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript", "Bootstrap"],
     "live link": "#",
     "source link": "#"
 },
@@ -24,7 +24,7 @@ let projects = [
     "title": "Tonic",
     "categories": ["CANOPY", "Back End Dev", "2015"],
     "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript", "Bootstrap"],
     "live link": "#",
     "source link": "#"
 },
@@ -34,7 +34,7 @@ let projects = [
     "title": "Tonic",
     "categories": ["CANOPY", "Back End Dev", "2015"],
     "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "technologies": ["HTML", "CSS", "Javascript"],
+    "technologies": ["HTML", "CSS", "Javascript", "Bootstrap"],
     "live link": "#",
     "source link": "#"
 },
@@ -44,39 +44,95 @@ let projects = [
     "title": "Multi-Purpose Posts",
     "categories": ["CANOPY", "Back End Dev", "2015"],
     "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript"],
+    "technologies": ["HTML", "Ruby on rails", "CSS", "Javascript", "Bootstrap"],
     "live link": "#",
     "source link": "#"
 }
 ];
+
 const numOfProject = document.querySelectorAll('.workSamples').length;
-for (let index = 0; index < numOfProject; index++){
-    const image = document.querySelectorAll('.workImages')[index];
-    image.src = projects[index]['featured image'];
 
-    const titleText = document.querySelectorAll('.workTitles')[index];
-    titleText.textContent = projects[index].title;
+// PULLS AND SUPPLIES PROJECT DETAILS
+function getProjectDetails(containerIndex, dataIndex){
+    const image = document.querySelectorAll('.workImages')[containerIndex];
+    image.src = projects[dataIndex]['featured image'];
 
-    const metaCategory = document.querySelectorAll('.workMetadatas')[index];
+    const titleText = document.querySelectorAll('.workTitles')[containerIndex];
+    titleText.textContent = projects[dataIndex].title;
+
+    const metaCategory = document.querySelectorAll('.workMetadatas')[containerIndex];
     const numOfCategories =  metaCategory.querySelectorAll('.metaCategories').length;
-    for (let indexOfCategory = 0; indexOfCategory < numOfCategories; indexOfCategory++){
-        metaCategory.querySelectorAll('.metaCategories')[indexOfCategory].textContent = projects[index].categories[indexOfCategory];
+
+    let indexOfCat = 0;
+    // FOR MODAL: skip first metadata in project one for modal
+    if (containerIndex === numOfProject && dataIndex === 0){
+        indexOfCat = 1;
     }
 
-    document.querySelectorAll('.workDescriptions')[index].textContent = projects[index].description;
+    for (let indexOfCategory = 0; indexOfCategory < numOfCategories; indexOfCategory++){
+        metaCategory.querySelectorAll('.metaCategories')[indexOfCategory].textContent = projects[dataIndex].categories[indexOfCat];
+        indexOfCat++;
+    }
 
-    const workTag = document.querySelectorAll('.workTags')[index];
+    const workDescription = document.querySelectorAll('.workDescriptions')[containerIndex];
+
+    // FOR MODAL: display a monger text in description instead of project's description
+    if (containerIndex === numOfProject){
+        workDescription.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry.";
+    }
+    else {
+    workDescription.textContent = projects[dataIndex].description;
+    }
+
+    const workTag = document.querySelectorAll('.workTags')[containerIndex];
     const numOfTags =  workTag.querySelectorAll('li').length;
     for (let indexOfTag = 0; indexOfTag < numOfTags; indexOfTag++){
-        workTag.querySelectorAll('li')[indexOfTag].querySelector('a').textContent = projects[index].technologies[indexOfTag];
+
+        // checks for empty lists and hides container
+        if (!projects[dataIndex].technologies[indexOfTag]){
+            workTag.querySelectorAll('li')[indexOfTag].style.display = "none";
+        }
+        else {
+        workTag.querySelectorAll('li')[indexOfTag].querySelector('a').textContent = projects[dataIndex].technologies[indexOfTag];
+        }
     }
 }
 
+// SUPPLIES INDEX FOR PROJECT CARD DETAILS IN ASCENDING ORDER
+for (let index = 0; index < numOfProject; index++){
+    getProjectDetails(index, index);
+}
+
+// HANDLES MODAL POPUP TOGGLE
+function activateModalPopup(event){
+    event.preventDefault();
+    const modalWindow = document.querySelector('.modalSection');
+    modalWindow.classList.add('modalActivated');
+
+    const closest = event.currentTarget.closest('.workSamples');
+    const workSamplesArray = document.querySelectorAll('.workSamples');
+    if (closest) {
+        
+        for(let ind = 0; ind < numOfProject; ind++){
+            if (workSamplesArray[ind] === closest){
+                getProjectDetails(numOfProject, ind);
+                break;
+            }
+        }
+    }
+}
+
+function deactivateModalPopup(){
+    const modalWindow = document.querySelector('.modalSection');
+    modalWindow.classList.remove('modalActivated');
+}
 
 // CONTROLS THE MOBILE DROPDOWN MENU
 function toggleMobileMenu() {
   const menuBg = document.querySelector('#menuiconContainer');
   menuBg.classList.toggle('menudropdown');
 }
+
+
 
 
