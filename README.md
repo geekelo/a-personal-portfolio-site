@@ -98,6 +98,7 @@ After you're finished please remove all the comments and instructions.
 - **Simple and Attractive Design** : the UI / UX is engaging and appealing.
 - **Functional** : this website is accessible, easy to navigate, and helpful for users.
 - **Animations and transitions : This website has engaging transitions and animations that makes it easier to use, smoother and more natural.
+- ** PopUp windows **: this features add to see the project details about each project in popup windows.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
