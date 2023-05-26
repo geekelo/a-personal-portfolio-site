@@ -139,9 +139,9 @@ function toggleMobileMenu() {
 
 // validate that email is in lowercase
 function validateForm() {
-    const errorEmail = document.forms["contactForm"]["email"].nextElementSibling;
+    const errorEmail = document.querySelector('.error');
     const emailValue = document.forms["contactForm"]["email"].value;
-    const email = document.forms["contactForm"]["email"];
+    
     if (emailValue !== emailValue.toLowerCase()) {
       errorEmail.className = "error active";
       errorEmail.textContent = "Oops! Email should be in lower case*";
