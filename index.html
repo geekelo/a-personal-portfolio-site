@@ -274,11 +274,12 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
 I’d love to help with it!</p>
       </div>
-      <form action="https://formspree.io/f/xqkonnqr" method="POST" class="contactForm">
+      <form action="https://formspree.io/f/xqkonnqr" method="POST" class="contactForm" onsubmit="return validateForm()" name="contactForm">
 	<input type="text" id="name" name="fullname" placeholder="e.g John Doe" class="formFields defaultFontFamily" maxlength="30" required>
-	<input type="email" id="email" name="email" placeholder="e.g abc@gmail.com" class="formFields defaultFontFamily" required>
-        <textarea placeholder="Write your message here" class="formFields defaultFontFamily" name="message" cols="170" rows="10" maxlength="500" required></textarea>
-	<input type="submit" class="formBtn defaultFontFamily" value="Get In Touch">
+	<input type="email" id="email" name="email" placeholder="e.g abc@gmail.com" class="formFields defaultFontFamily" required>      
+  <textarea placeholder="Write your message here" class="formFields defaultFontFamily" name="message" cols="170" rows="10" maxlength="500" required></textarea>
+	<span class="error defaultFontFamily" aria-live="polite"></span>
+  <input type="submit" class="formBtn defaultFontFamily" value="Get In Touch">
       </form>
     </div>
   </section>

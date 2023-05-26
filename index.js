@@ -134,5 +134,20 @@ function toggleMobileMenu() {
 }
 
 
+// VALIDATE CONTACT FORM EMAIL VALUE
+
+
+// validate that email is in lowercase
+function validateForm() {
+    const errorEmail = document.querySelector('.error');
+    const emailValue = document.forms["contactForm"]["email"].value;
+    
+    if (emailValue !== emailValue.toLowerCase()) {
+      errorEmail.className = "error active";
+      errorEmail.textContent = "Oops! Email should be in lower case*";
+      return false;
+    }
+  }
+
 
 
