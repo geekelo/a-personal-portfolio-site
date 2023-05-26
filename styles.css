@@ -426,7 +426,7 @@ input[class~="formFields"] {
 
 .modalMetadatas {
   gap: 10px;
-  width: 50%;
+  width: 15rem;
 }
 
 .modalActivated .modalBtnContainer {
@@ -808,7 +808,7 @@ img:hover {
   .modalMetadatas {
     margin-bottom: 2rem;
     font-size: 80%;
-    width: 100%;
+    width: 18rem;
   }
 
   .modalContents {
