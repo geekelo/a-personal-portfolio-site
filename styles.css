@@ -816,9 +816,9 @@ img:hover {
   /* FORM VALIDATION STYLES *
 
 /* This is the style of our error messages */
-.error {
-  width: 75%;
-}
+  .error {
+    width: 75%;
+  }
 
   /* MODAL WINDOW POPUP STYLES */
   .modalbackdrop {
