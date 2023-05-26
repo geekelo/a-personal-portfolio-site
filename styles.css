@@ -386,6 +386,24 @@ input[class~="formFields"] {
   border: 1px solid #cfd8dc;
 }
 
+/* FORM VALIDATION STYLES *
+
+/* This is the style of our error messages */
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #091e42;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
 /* MODAL WINDOW STYLES */
 .modalbackdrop {
   display: none;
@@ -794,6 +812,13 @@ img:hover {
   .formBtn {
     margin: auto;
   }
+
+  /* FORM VALIDATION STYLES *
+
+/* This is the style of our error messages */
+.error {
+  width: 75%;
+}
 
   /* MODAL WINDOW POPUP STYLES */
   .modalbackdrop {
