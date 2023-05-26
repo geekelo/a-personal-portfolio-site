@@ -99,6 +99,7 @@ After you're finished please remove all the comments and instructions.
 - **Functional** : this website is accessible, easy to navigate, and helpful for users.
 - **Animations and transitions : This website has engaging transitions and animations that makes it easier to use, smoother and more natural.
 - ** PopUp windows **: this features add to see the project details about each project in popup windows.
+-  ** Form validation **: this features validate the email should be lowercase for portfolio contact.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
