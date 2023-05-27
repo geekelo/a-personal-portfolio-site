@@ -149,7 +149,8 @@ function validateForm() {
     }
   }
 
-// GETS PREVIOUSLY LOGGED DATA FOM LOCAL STORAGE AND SETS THE FORM VALUES WITH THE DATA
+// GETS PREVIOUSLY LOGGED DATA FOM LOCAL STORAGE AND SETS
+//THE FORM VALUES WITH THE DATA
   const storedItems = JSON.parse(localStorage.getItem('form'));
   console.log(storedItems);
   document.querySelector('#name').value = storedItems.name;
