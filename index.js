@@ -149,5 +149,20 @@ function validateForm() {
     }
   }
 
+// GETS PREVIOUSLY LOGGED DATA FOM LOCAL STORAGE AND SETS THE FORM VALUES WITH THE DATA
+  const storedItems = JSON.parse(localStorage.getItem('form'));
+  console.log(storedItems);
+  document.querySelector('#name').value = storedItems.name;
+  document.forms["contactForm"]["email"].value = storedItems.email;
+  document.forms["contactForm"]["message"].value = storedItems.message;
 
+// RETRIEVES INPUT LOGGED AND SENDS IT TO LOCAL STORAGE
+function setStorage(){
+const formValues = {
+    name: document.querySelector('#name').value,
+     email: document.forms["contactForm"]["email"].value,
+     message: document.forms["contactForm"]["message"].value,
+ }
+  localStorage.setItem('form', JSON.stringify(formValues));
+}
 
